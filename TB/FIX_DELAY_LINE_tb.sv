@@ -5,14 +5,14 @@ module FIX_DELAY_LINE_tb();
     reg         i_RST_p     =1;
     reg         i_SOURCE_p =0;
     wire        o_DELAY_p;
-    wire        o_BUSY;
+    wire        o_BUSY_h;
     //モジュールインスタンス
     FIX_DELAY_LINE uFIX_DELAY_LINE(
         .i_CLK          (i_CLK),
         .i_RST_p        (i_RST_p),
         .i_SOURCE_p     (i_SOURCE_p),
         .o_DELAY_p      (o_DELAY_p),
-        .o_BUSY         (o_BUSY)
+        .o_BUSY_h       (o_BUSY_h)
     );
     // クロック50MHz
     always #10 i_CLK = ~i_CLK;

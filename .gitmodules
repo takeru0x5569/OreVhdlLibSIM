@@ -1,0 +1,3 @@
+[submodule "OreVhdlLib"]
+	path = OreVhdlLib
+	url = https://github.com/takeru0x5569/OreVhdlLib.git
